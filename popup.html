@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync Autofill</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SkillSync Profile</h1>
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="John Doe">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john@example.com">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="+1 234 567 8900">
+        </div>
+        <div class="form-group">
+            <label for="skills">Skills (comma separated)</label>
+            <input type="text" id="skills" placeholder="React, Node.js, Design">
+        </div>
+        <div class="form-group">
+            <label for="portfolio">Portfolio URL</label>
+            <input type="url" id="portfolio" placeholder="https://johndoe.com">
+        </div>
+        <div class="form-group">
+            <label for="bio">Short Bio</label>
+            <textarea id="bio" rows="3" placeholder="Passionate developer..."></textarea>
+        </div>
+        <div class="actions">
+            <button id="saveBtn" class="primary-btn">Save Profile</button>
+            <button id="autoFillBtn" class="secondary-btn">Auto Fill Current Page</button>
+        </div>
+        <div id="status" class="status-message"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
