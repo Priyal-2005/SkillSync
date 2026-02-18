@@ -1,3 +1,4 @@
+console.log("SkillSync content script injected");
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "fillForm" && request.profile) {
         const profile = request.profile;
